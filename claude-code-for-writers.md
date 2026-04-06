@@ -42,7 +42,7 @@ That said, once Claude Code is up and running, **ask it first.** Claude Code is 
 ## Table of Contents
 
 1. [What is Claude Code?](#1-what-is-claude-code)
-2. [What Claude Code Cannot Do](#2-what-claude-code-cannot-do)
+2. [Honest Expectations](#2-honest-expectations)
 3. [Installing Claude Code](#3-installing-claude-code)
 4. [Organizing Your Manuscript Folder](#4-organizing-your-manuscript-folder)
 5. [Setting Up Claude's Memory](#5-setting-up-claudes-memory)
@@ -65,21 +65,21 @@ It's also aware of your whole writing folder at once. If you ask it to check whe
 
 ---
 
-## 2. What Claude Code Cannot Do
+## 2. Honest Expectations
 
-Honest expectations matter. Read this before investing time in the setup — so you know exactly what you're getting.
+Read this before investing time in the setup — so you know exactly what you're getting into, and what you're not.
 
-**It doesn't browse the internet.** By default, Claude Code cannot look up facts, check historical details, or verify real-world information. If you ask "what was the weather in Paris on D-Day?" it will give you its best answer from its training data — which may be accurate or may not be. Always verify factual claims through your own research.
+**It doesn't browse the internet by default — but it can, with setup.** Out of the box, Claude Code works from its training knowledge, not live web data. If you ask about a historical detail, it will give its best answer from what it already knows — which may be accurate or may not be. Always verify factual claims through your own research, especially anything historical, scientific, or legal.
 
-**It doesn't know your book unless you tell it — but this is fixable.** Every session starts fresh. Claude Code has no memory of previous conversations unless you load your reference files. This is exactly why Section 5 exists: with `CLAUDE.md`, `book-bible.md`, and `progress.md` in place and loaded at the start of each session, this limitation largely disappears.
+> That said, web search *can* be added to Claude Code via something called an MCP server. It requires obtaining an API key from a service like Brave Search and editing a configuration file — not difficult for a developer, but a non-trivial step for a non-technical user. If you later want to explore this, ask Claude Code to walk you through setting up a web search MCP server and it will guide you step by step.
 
-**It can't replace your judgment.** Claude Code will sometimes give suggestions that are competent but generic. It can produce prose that sounds fine but has no soul. Your job is to be the author — to know when something is right and when it isn't, and to push back until it gets there or write it yourself.
+**It doesn't remember your book between sessions — but this is fully fixable.** Every session starts fresh. The entire point of Section 5 in this guide is to solve this: with `CLAUDE.md`, `book-bible.md`, and `progress.md` set up, Claude comes back up to speed in 30 seconds at the start of any session.
 
-**It doesn't know your readers.** It has no idea who your audience is unless you tell it. Be explicit: "This is for readers of upmarket women's fiction in their 40s" or "My audience is teenage boys who love survival stories." Better yet, add your intended audience to `CLAUDE.md` so Claude always knows.
+**It can produce competent prose that has no soul.** Claude Code is good at writing sentences that are technically correct and structurally sound. What it can't do is care about your book the way you do. Its suggestions will sometimes be generic, safe, or slightly off-voice. Your job is to know when something isn't right and push back — or throw it out and write it yourself. Treat everything it produces as raw material, not a finished answer.
 
-**It can be confidently wrong about facts.** Especially for anything historical, scientific, or legal. Treat factual content from Claude Code as a first draft to be checked, not a source of truth.
+**It can't make the final calls.** It can give you three ways a scene could end, but it cannot tell you which one is true to your characters or serves your book. That judgment is yours and only yours. Claude Code is a tool for generating options and pressure-testing your thinking — not for deciding.
 
-**It can't make the final calls.** It can suggest three ways a chapter could end, but it cannot tell you which one is right for your book. That's yours.
+None of these are reasons not to use it. They're just the shape of the collaboration: Claude handles volume and speed, you handle judgment and voice.
 
 ---
 
